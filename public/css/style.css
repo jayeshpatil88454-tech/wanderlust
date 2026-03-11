@@ -53,8 +53,8 @@ body {
     background-color: #ebebeb;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: space-evenly;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* Cards */
@@ -116,4 +116,42 @@ body {
 .show-card {
     padding-left: 0;
     padding-right: 0;
+}
+
+/* Large Screens / Desktop */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+/* Laptop */
+@media (max-width: 992px) {
+  .listing-card {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .show-img {
+    height: 220px;
+  }
+}
+
+/* Mobile (Android / iPhone) */
+@media (max-width: 576px) {
+  .show-img {
+    height: 180px;
+  }
+
+  .btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
